@@ -8,7 +8,7 @@ import re
 from player import HivePlayer
 import csv
 
-# Fill in boardgamearena login data
+# Fill in boardgame arena login data
 USERNAME = ''
 MAIL = ''
 PW = ''

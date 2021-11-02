@@ -2,6 +2,7 @@ from typing import List
 
 
 class HivePlayer:
+
     def __init__(self, name: str, href: str, age: str, country: str, languages: List[str],
                  elo: int, nr_games: int, nr_wins: int):
         self.name = name
