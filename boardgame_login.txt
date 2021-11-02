@@ -1,3 +1,0 @@
-USERNAME = 'qwertytest'
-MAIL = 'edilelki.notifications'
-PW = 'cvo2setusi'
