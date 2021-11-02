@@ -7,11 +7,11 @@ from bs4 import BeautifulSoup
 import re
 from player import HivePlayer
 import csv
+import os
 
 # Fill in boardgame arena login data
-USERNAME = ''
-MAIL = ''
-PW = ''
+USERNAME = os.environ.get('boardgame_arena_username')
+PW = os.environ.get('boardgame_arena_password')
 
 
 # Selenium driver initialization
