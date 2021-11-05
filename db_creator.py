@@ -35,18 +35,23 @@ class DatabaseCreator:
         driver.find_element(By.ID, 'password_input').send_keys(pw)
         button_login = driver.find_element(By.ID, 'submit_login_button')
         button_login.click()
-        sleep(2)
+        sleep(0.5)
+
 
         # Select all time ranking
         driver.get('https://boardgamearena.com/gamepanel?game=hive')
+        sleep(0.5)
         menu = driver.find_element(By.ID, "ranking_menu_menu_title")
         menu.click()
+
         alltime = driver.find_element(By.ID, "rankdisplay_all")
         alltime.click()
 
+
+
         # Clicking 'see more' button to get more players (with every click 10 new players)
         seemore = driver.find_element(By.ID, "seemore")
-        for i in range(1):
+        for i in range(3):
             seemore.click()
             sleep(0.2)
 
@@ -57,7 +62,6 @@ class DatabaseCreator:
         # Get players info
         players = soup.find_all(
             class_='player_in_list player_in_list_withbaseline player_in_list_fullwidth player_in_list_rank')
-        print(len(players))
 
         hive_players = []
 

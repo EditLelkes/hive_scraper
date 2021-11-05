@@ -17,24 +17,16 @@ if __name__ == "__main__":
     elif arguments.input_mode == 'json':
         pass
 
-    if arguments.input_mode == 'csv':
+    if arguments.output_mode == 'csv':
         database_creator.to_csv()
-    elif arguments.input_mode == 'excel':
+    elif arguments.output_mode == 'excel':
         database_creator.to_excel()
-    elif arguments.input_mode == 'json':
+    elif arguments.output_mode == 'json':
         pass
 
 
 
-# Create csv from hive players data
 
-
-# argparse
-
-# based on argparse
-
-# if csv mode:
-#database_creator = DatabaseCreator.create_from_csv()
 
 
 
